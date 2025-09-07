@@ -6,12 +6,13 @@
     <body>
         <a-scene>
             <a-cylinder
-                color="yellow" position="0 1 -5" radius="1" height="2"
+                color="yellow" position="0 1 -5" radius="0.5" height="1"
                 animation="
                     property: position;
                     from: 0 1 -5;
                     to: 0 4 -5;
                     loop: true;
+                    dir: alternate;
                     dur: 500;
                 "
                 animation__2="
@@ -21,7 +22,22 @@
                     startEvents:click;"
                 >
             </a-cylinder>
-            
+
+            <a-box color="red" position="-2 5 -5" height="1" width="1" depth="1"
+                animation="
+                    property: position;
+                    from: -2 5 -5;
+                    to: 2 5 -5;
+                    loop: true;
+                    dir: alternate;
+                    dur: 750;"
+
+                  animation__2="
+                    property: scale;
+                    from: 1 1 1;
+                    to: 0 0 0;
+                    startEvents: click;
+                "></a-box>
             <a-plane
                 width="20"
                 height="20"
