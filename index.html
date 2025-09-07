@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
+    </head>
+    <body>
+        <a-scene>
+            <a-cylinder
+                color="yellow" position="0 1 -5" radius="1" height="2"
+                animation="
+                    property: scale;
+                    from: 1 1 1;
+                    to: 2 2 2;
+                    startEvents:click;"
+                >
+            </a-cylinder>
+            
+            <a-plane
+                width="20"
+                height="20"
+                color="teal"
+                rotation="-90 0 0"
+            ></a-plane>
+            
+            <a-sky color="#EEEEEE"></a-sky>
+            
+            <a-camera>
+                <a-cursor></a-cursor>
+            </a-camera>
+        </a-scene>
+    </body>
+</html>
