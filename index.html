@@ -8,9 +8,16 @@
             <a-cylinder
                 color="yellow" position="0 1 -5" radius="1" height="2"
                 animation="
+                    property: position;
+                    from: 0 1 -5;
+                    to: 0 4 -5;
+                    loop: true;
+                    dur: 500;
+                "
+                animation__2="
                     property: scale;
                     from: 1 1 1;
-                    to: 2 2 2;
+                    to: 0 0 0;
                     startEvents:click;"
                 >
             </a-cylinder>
